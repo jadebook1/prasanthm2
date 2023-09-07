@@ -1,28 +1,47 @@
-SCHEMANAME , TABLENAME , COLUMNNAME, DATATYPE, ISPRIMARYKEY, REFERENCEDSCHEMA, REFERENCEDTABLE, REFERENCEDCOLUMN, REMARKS
-DCRGTIOP,RT_ENTITY,BE_GEOLOCID, VARCHAR,not ,,,,The unique_IDentifier for the Geo Location
-DCRGTIOP,RT_ENTITY,BE_LEGLCODE, VARCHAR,not ,,,,This is the Legal Entity GL Code pulled from LEXI
-DCRGTIOP,RT_MS_ISSUE, CREATOR, DECFLOAT,not ,,,,Resource Creator
-DCRGTIOP,RT_MS_ISSUE,CRRNTDDT, TIMESTAMP,not ,,,,The latest Current Due Date of the Action Plan(s) associated to the Issue. Current Due Date is the date the Action Plan is to be promoted to Pending Verification if Closure Verification is required or Closed if Closure Verification is not required.
-DCRGTIOP,RT_EMPLOYEE, EMP_MSFWID, VARCHAR, not ,,,,
-DCRGTIOP,RT_ENTITY,ENTITY_ID,DECFLOAT,,,,,Resource_ID
-DCRGTIOP,RT__ENTITY_MS_ASSOCTYPE,ENTITY_ID, DECFLOAT, , DCRGTIOP,RT_ENTITY,ENTITY_ID,Resource_ID
-DCRGTIOP,RT_ENTITY MS_ASSOCTYPE, ENTITY_ID,DECFLOAT,,,,,Resource_ID
-DCRGTIOP,ENUMVALS, ENUMVALID, DECIMAL,,,,,Enumerated value_ID PK: based on ENUMVALIDSEQ.
-DCRGTIOP,RT_MS_ISSUE, ISSDESCR, VARCHAR, not ,,,,The text providing further detail on the scope or objective of an Issue.
-DCRGTIOP,RT_MS_ACTIONPLAN,MS_ACTIONPLAN_ID,DECFLOAT,,,,,Resource_ID
-DCRGTIOP,RT_MS_ASSOCTYPE,MS_ASSOCTYPE_ID,DECFLOAT,,,,,Resource_ID
-DCRGTIOP,RT__ENTITY_MS_ASSOCTYPE,MS_ASSOCTYPE_ID,DECFLOAT,not ,DCRGTIOP,RT_MS_ASSOCTYPE,MS_ASSOCTYPE_ID,Resource_ID
-DCRGTIOP,RT_ENTITY MS_ASSOCTYPE,MS_ASSOCTYPE_ID,DECFLOAT,not ,,,,Resource_ID
-DCRGTIOP,RT__MS_ISSUE_MS_ASSOCTYPE,MS_ASSOCTYPE_ID,DECFLOAT,not ,DCRGTIOP,RT_MS_ASSOCTYPE,MS_ASSOCTYPE_ID,Resource_ID
-DCRGTIOP,RT__MS_ISSUE_MS_ASSOCTYPE,MS_ASSOCTYPE_ID,DECFLOAT,not ,,,,Resource_ID
-DCRGTIOP,RT_MS_ISSUE,MS_ISSUE_ID,DECFLOAT,,,,,Resource_ID
-DCRGTIOP,RT_MS_ISSUE MS_ASSOCTYPE,MS_ISSUE_ID, DECFLOAT, ,DCRGTIOP,RT_MS_ISSUE,MS_ISSUE_ID,Resource_ID
-DCRGTIOP,RT_MS_ISSUE_MS_ASSOCTYPE,MS_ISSUE_ID,DECFLOAT,,,,,Resource_ID
-DCRGTIOP,ENUMVALS, NAME, VARCHAR, not ,,,,Enumerated value name unique within a given enumerated type.
-DCRGTIOP,RT_MS_ACTIONPLAN, NAMEO0, VARCHAR,not ,,,,Resource Name
-DCRGTIOP,RT_MS_ASSOCTYPE, NAME00,VARCHAR,not ,,,,Resource Name
-DCRGTIOP,RT_MS_ISSUE, STTS,DECFLOAT,not ,DCRGTIOP,ENUMVALS, ENUMVALID,The status of an issue relative to the work being done to satisfy the Issue.
-DCRGTIOP,RT_MS_ISSUE, TTL, VARCHAR,not ,,,,The high level description of the Issue.
-RT_MS_ISSUE is the major table in this schema.
-Sometimes RT_ENTITY,RT_MS_ACTIONPLAN can have mulitple rows so pl concatenate any values to single row from this table.
-The number of rows in resultant of queries should be same as RT_MS_ISSUE , which mean all other tables joined can have more than one rows so pl concatenate any values to single row
+Job Profile: Data Engineer with Graph Database and Python Experience
+
+Position: Data Engineer
+
+Job Description:
+
+As a Data Engineer with expertise in graph databases and Python, you will play a crucial role in designing, developing, and maintaining data infrastructure and pipelines to support our organization's data-driven decision-making processes. You will work closely with data scientists, analysts, and other cross-functional teams to ensure the availability, reliability, and performance of our data systems.
+
+Key Responsibilities:
+
+    Data Pipeline Development: Design and implement data pipelines to efficiently extract, transform, and load (ETL) data from various sources into a graph database.
+
+    Graph Database Management: Utilize your expertise in graph database technologies (e.g., Neo4j, Amazon Neptune) to model and optimize data for graph-based queries and analysis.
+
+    Data Modeling: Collaborate with data scientists and analysts to create effective graph data models that support complex analytical queries and insights.
+
+    Python Programming: Develop custom scripts and applications in Python to automate data processes, improve data quality, and enhance data pipeline performance.
+
+    Data Quality Assurance: Implement data validation and quality checks to ensure the integrity and accuracy of data stored in the graph database.
+
+    Performance Optimization: Continuously monitor and fine-tune the graph database and data pipelines to ensure optimal performance and scalability.
+
+    ETL Automation: Streamline and automate ETL processes to reduce manual intervention and increase efficiency.
+
+    Documentation: Maintain clear and comprehensive documentation of data pipelines, schemas, and processes for reference and knowledge sharing.
+
+    Collaboration: Collaborate with cross-functional teams to understand their data requirements and provide support in using graph data for their specific use cases.
+
+    Security and Compliance: Implement data security and compliance best practices to protect sensitive information and ensure adherence to relevant regulations (e.g., GDPR, HIPAA).
+
+    Troubleshooting and Support: Address and resolve data-related issues and provide support for data-related inquiries from team members.
+
+Qualifications:
+
+    Bachelor's or Master's degree in Computer Science, Data Engineering, or a related field.
+    Proven experience in data engineering roles, with a focus on graph databases.
+    Strong proficiency in Python programming.
+    Experience with one or more graph database technologies (e.g., Neo4j, Amazon Neptune).
+    Proficiency in ETL processes and data integration.
+    Knowledge of data modeling and query optimization for graph databases.
+    Familiarity with data warehousing concepts and technologies.
+    Strong problem-solving skills and attention to detail.
+    Excellent communication and collaboration skills.
+    Ability to work independently and in a team-oriented environment.
+    Knowledge of cloud platforms (e.g., AWS, Azure, GCP) is a plus.
+
+This job profile for a Data Engineer with graph database and Python experience outlines the key responsibilities and qualifications required for the role. Adjustments can be made to tailor the job description to the specific needs and requirements of your organization.
